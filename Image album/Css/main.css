@@ -46,13 +46,17 @@ input {
 
 .container {
     width: 100vw;
-    height: 100vh;
+    height: 30vh;
     display: flex;
     justify-content: center;
     align-items: center;
     max-width: 80rem;
     margin: 0 auto;
     padding: 2rem;
+}
+
+.paramDiv {
+    margin-top: 200px;
 }
 
 .btn {
@@ -78,7 +82,7 @@ input {
 .label {
     font-size: 5.4rem;
     color: #56a5eb;
-    margin-bottom: 3rem;
+    
 }
 
 .parameters {

@@ -10,19 +10,25 @@
 </head>
 <body>
     <form id="form1" runat="server">
-        <div>
+        <div class="">
+            <asp:Label ID="Label1" runat="server" Text="Login" CssClass="label"></asp:Label>        
         </div>
-        <asp:Label ID="Label1" runat="server" Text="Login" CssClass="label"></asp:Label>        
-        <asp:Label ID="Label2" runat="server" Text="Email:" CssClass="parameters"></asp:Label>
-        <p>
-            <asp:TextBox ID="logEmailTxt" runat="server"></asp:TextBox>
-         </p>
-        <p>
-            <asp:Label ID="Label3" runat="server" Text="Password:" CssClass="parameters"></asp:Label>
-        </p>
-        <p>
-            <asp:TextBox ID="logPasswordTxt" runat="server"></asp:TextBox>
-        </p>
+        <div class="">
+            <p>
+                <asp:Label ID="Label2" runat="server" Text="Email:" CssClass="parameters"></asp:Label>
+            </p>
+            <p>
+                <asp:TextBox ID="logEmailTxt" runat="server"></asp:TextBox>
+            </p>
+            <p>
+                <asp:Label ID="Label3" runat="server" Text="Password:" CssClass="parameters"></asp:Label>
+            </p>
+            <p>
+                <asp:TextBox ID="logPasswordTxt" runat="server"></asp:TextBox>
+            </p>
+        </div>
+        
+        
         <p>
             <asp:Button ID="btnLogin" runat="server" Text="Login" CssClass="btn" />
         </p>
