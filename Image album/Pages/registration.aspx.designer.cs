@@ -42,15 +42,6 @@ namespace Image_album.Pages
         protected global::System.Web.UI.WebControls.Label Label2;
 
         /// <summary>
-        /// nameReqVal control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator nameReqVal;
-
-        /// <summary>
         /// nameTxt control.
         /// </summary>
         /// <remarks>
@@ -67,15 +58,6 @@ namespace Image_album.Pages
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label Label3;
-
-        /// <summary>
-        /// surnameReqVal control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator surnameReqVal;
 
         /// <summary>
         /// surnameTxt control.
@@ -96,15 +78,6 @@ namespace Image_album.Pages
         protected global::System.Web.UI.WebControls.Label Label4;
 
         /// <summary>
-        /// emailReqVal control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator emailReqVal;
-
-        /// <summary>
         /// emailTxt control.
         /// </summary>
         /// <remarks>
@@ -121,15 +94,6 @@ namespace Image_album.Pages
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label Label5;
-
-        /// <summary>
-        /// passwordReqVal control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator passwordReqVal;
 
         /// <summary>
         /// passwordTxt control.

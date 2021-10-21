@@ -1,4 +1,5 @@
 ﻿:root {
+    background-color: #ecf5ff;
     font-size: 62.5%;
 }
 
@@ -7,21 +8,14 @@
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
-}
-
-body {
-    background-color: #ecf5ff;
+    color: #333;
 }
 
 li, a {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 30px;
+    font-weight: 500px;
+    font-size: 16px;
     text-decoration: none;
-    color: #333;
-}
-.hyper:hover{
-    color:red;
-    text-decoration:underline;
 }
 
 header {
@@ -67,8 +61,11 @@ input {
 
 .btn {
     font-size: 1.8rem;
+    padding: 1rem 0;
     width: 17rem;
     text-align: center;
+    border: 0.1rem solid #56a5eb;
+    margin-bottom: 1rem;
     text-decoration: none;
     color: #56a5eb;
     background-color: white;
@@ -84,7 +81,8 @@ input {
 
 .label {
     font-size: 5.4rem;
-    color: #56a5eb; 
+    color: #56a5eb;
+    
 }
 
 .parameters {
@@ -112,9 +110,4 @@ input {
 .div_header {
     background-color: #333;
     height: 55px;
-}
-
-.errorLabel{
-    font-size:large;
-    color:red;
 }

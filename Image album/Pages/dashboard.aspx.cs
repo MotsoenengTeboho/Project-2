@@ -11,13 +11,7 @@ namespace Image_album.Pages
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            Label1.Text = "Email: " + Session["email"];
-        }
 
-        protected void btnLogout_Click(object sender, EventArgs e)
-        {
-            Session.Abandon();
-            Response.Redirect("login.aspx");
         }
     }
 }

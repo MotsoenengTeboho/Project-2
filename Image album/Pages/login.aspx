@@ -15,32 +15,26 @@
         </div>
         <div class="">
             <p>
-                <asp:Label ID="Label2" runat="server" Text="Email:  " CssClass="parameters"></asp:Label>
-                <asp:RequiredFieldValidator ID="emailReqVal" runat="server" ErrorMessage="Email required." ControlToValidate="logEmailTxt"></asp:RequiredFieldValidator>
+                <asp:Label ID="Label2" runat="server" Text="Email:" CssClass="parameters"></asp:Label>
             </p>
             <p>
-                <asp:TextBox ID="logEmailTxt" runat="server" TextMode="Email"></asp:TextBox>
+                <asp:TextBox ID="logEmailTxt" runat="server"></asp:TextBox>
             </p>
             <p>
-                <asp:Label ID="Label3" runat="server" Text="Password:  " CssClass="parameters"></asp:Label>
-                <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ErrorMessage="Password required." ControlToValidate="logPasswordTxt"></asp:RequiredFieldValidator>
+                <asp:Label ID="Label3" runat="server" Text="Password:" CssClass="parameters"></asp:Label>
             </p>
             <p>
-                <asp:TextBox ID="logPasswordTxt" runat="server" TextMode="Password"></asp:TextBox>
+                <asp:TextBox ID="logPasswordTxt" runat="server"></asp:TextBox>
             </p>
         </div>
         
         
         <p>
-            <asp:Button ID="btnLogin" runat="server" Text="Login" CssClass="btn" OnClick="btnLogin_Click" />
+            <asp:Button ID="btnLogin" runat="server" Text="Login" CssClass="btn" />
         </p>
         <asp:Label ID="Label4" runat="server" Text="Don't have an account?"></asp:Label>
 
         <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Pages/registration.aspx">Register</asp:HyperLink>
-
-        <p>
-            <asp:Label ID="logLabel" runat="server" Text="" CssClass="errorLabel"></asp:Label>
-        </p>
 
     </form>
 </body>
