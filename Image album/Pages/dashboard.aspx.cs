@@ -11,7 +11,13 @@ namespace Image_album.Pages
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            lblWelcome.Text = "User's email: " + Session["email"];
+        }
 
+        protected void btnLogout_Click(object sender, EventArgs e)
+        {
+            Session.Abandon();
+            Response.Redirect("login.aspx");
         }
     }
 }

@@ -14,6 +14,7 @@ namespace Image_album.Pages
         SqlConnection connection = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Project 2\Image album\imageAlbumDb.mdf;Integrated Security=True");
         protected void Page_Load(object sender, EventArgs e)
         {
+            ValidationSettings.UnobtrusiveValidationMode = UnobtrusiveValidationMode.None;
         }
 
         protected void btnRegister_Click(object sender, EventArgs e)
@@ -29,11 +30,18 @@ namespace Image_album.Pages
                 adapter.InsertCommand.ExecuteNonQuery();
 
                 connection.Close();
+
+                nameTxt.Text = "";
+                surnameTxt.Text = "";
+                emailTxt.Text = "";
+                passwordTxt.Text = "";
             }
             catch (Exception error)
             {
                 conLabel.Text = "Error: " + error.Message;
             }
+
+            Response.Redirect("login.aspx");
         }
     }
 }
