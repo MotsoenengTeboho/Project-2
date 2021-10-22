@@ -29,17 +29,27 @@ namespace Image_album.Pages
                 adapter.InsertCommand = command;
                 adapter.InsertCommand.ExecuteNonQuery();
 
-                connection.Close();
+                SqlDataReader readEmail = command.ExecuteReader();
+                if (readEmail.HasRows)
+                {
+                    conLabel.Text = "Email already exists in the database! Please log in.";
+                }
+                else
+                {
+                    conLabel.Text = "Email does not exist in the database! Please create account.";
+                }
 
-                nameTxt.Text = "";
-                surnameTxt.Text = "";
-                emailTxt.Text = "";
-                passwordTxt.Text = "";
+                connection.Close();
             }
             catch (Exception error)
             {
                 conLabel.Text = "Error: " + error.Message;
             }
+
+            nameTxt.Text = "";
+            surnameTxt.Text = "";
+            emailTxt.Text = "";
+            passwordTxt.Text = "";
 
             Response.Redirect("login.aspx");
         }

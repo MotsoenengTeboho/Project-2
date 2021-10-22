@@ -22,22 +22,22 @@ namespace Image_album.Pages
             {
                 connection.Open();
 
-                SqlCommand com = new SqlCommand("SELECT COUNT(1) FROM [User] WHERE Email=@email AND Password=@password", connection);
+                String query = "SELECT COUNT(1) FROM [User] WHERE Email=@email AND Password=@password";
+                SqlCommand com = new SqlCommand(query, connection);
 
                 com.Parameters.AddWithValue("@email", logEmailTxt.Text);
                 com.Parameters.AddWithValue("@password", logPasswordTxt.Text);
                 int count = Convert.ToInt32(com.ExecuteScalar());
 
-                if(count == 1)
+                if (count == 1)
                 {
-                    Session["Email"] = logEmailTxt.Text;
+                    Session["Email"] = logEmailTxt.Text.Trim();
                     Response.Redirect("dashboard.aspx");
                 }
                 else
                 {
                     Label5.Text = "Incorrect user credentials.";
                 }
-                Response.Redirect("dashboard.aspx");
 
                 connection.Close();
             }
@@ -46,8 +46,6 @@ namespace Image_album.Pages
             {
                 Label5.Text = "Error: " + ex.Message; ;
             }
-
-            
         }
     }
 }
