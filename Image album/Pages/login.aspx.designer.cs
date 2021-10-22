@@ -42,6 +42,15 @@ namespace Image_album.Pages
         protected global::System.Web.UI.WebControls.Label Label2;
 
         /// <summary>
+        /// logEmailVal control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator logEmailVal;
+
+        /// <summary>
         /// logEmailTxt control.
         /// </summary>
         /// <remarks>
@@ -58,6 +67,15 @@ namespace Image_album.Pages
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label Label3;
+
+        /// <summary>
+        /// logPassVal control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator logPassVal;
 
         /// <summary>
         /// logPasswordTxt control.
@@ -94,5 +112,14 @@ namespace Image_album.Pages
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.HyperLink HyperLink1;
+
+        /// <summary>
+        /// Label5 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Label5;
     }
 }
