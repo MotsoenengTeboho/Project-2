@@ -1,28 +1,7 @@
 ﻿:root {
     background-color: #ecf5ff;
-    font-size: 62.5%;
-}
-
-* {
-    box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
-    padding: 0;
     color: #333;
-}
-
-li, a {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px;
-    text-decoration: none;
-}
-
-header {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    padding: 30px 10%;
-    height: 45px;
 }
 
 form {
@@ -33,6 +12,7 @@ form {
 }
 
 input {
+    justify-content: flex-end;
     text-align: center;
     margin-bottom: 1rem;
     width: 25rem;
@@ -43,31 +23,24 @@ input {
     border-radius: 1.5rem;
 }
 
-.container {
-    width: 100vw;
-    height: 30vh;
-    display: flex;
+table {
     justify-content: center;
     align-items: center;
-    max-width: 80rem;
-    margin: 0 auto;
-    padding: 2rem;
-}
-
-.paramDiv {
-    margin-top: 200px;
+    font-size: larger;
+    box-shadow: 0 0.1rem 1.4rem 0 rgba(86, 185, 235, 0.5);
 }
 
 .btn {
-    font-size: 1.8rem;
     padding: 1rem 0;
-    width: 17rem;
+    width: 180px;
+    height: 50px;
     text-align: center;
     border: 0.1rem solid #56a5eb;
     margin-bottom: 1rem;
     text-decoration: none;
     color: #56a5eb;
     background-color: white;
+    font-size: medium;
 }
 
 .btn:hover {
@@ -78,35 +51,11 @@ input {
     border-radius: 1.5rem;
 }
 
-.label {
-    font-size: 5.4rem;
+.divHead {
+    text-align: center;
+}
+
+.lblHeader {
+    font-size: 2rem;
     color: #56a5eb;
-    
-}
-
-.parameters {
-    font-size: 17px;
-}
-
-.nav_links {
-    list-style: none;
-}
-
-.nav_links li {
-    display: inline-block;
-    padding: 0px 20px;
-}
-
-.nav_links li a {
-    color: #56a5eb;
-    transition: all 0.3s ease 0s;
-}
-
-.nav_links li a:hover {
-    color: #56a5eb;
-}
-
-.div_header {
-    background-color: #333;
-    height: 55px;
 }
