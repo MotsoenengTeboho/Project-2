@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Image_album.Pages
+namespace Image_album
 {
 
 
