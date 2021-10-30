@@ -23,7 +23,7 @@ namespace Image_album.Pages
             {
                 connection.Open();
 
-                SqlCommand command = new SqlCommand("INSERT INTO [User](Name, Surname, Email, Password) VALUES ('" + nameTxt.Text + "', '" + surnameTxt.Text + "', '" + emailTxt.Text + "', '" + passwordTxt.Text + "')", connection);
+                SqlCommand command = new SqlCommand("+ [User](Name, Surname, Email, Password) VALUES ('" + nameTxt.Text + "', '" + surnameTxt.Text + "', '" + emailTxt.Text + "', '" + passwordTxt.Text + "')", connection);
 
                 SqlDataAdapter adapter = new SqlDataAdapter();
                 adapter.InsertCommand = command;

@@ -24,9 +24,7 @@
                 <asp:TableHeaderCell>Description</asp:TableHeaderCell>
                 <asp:TableHeaderCell>Image</asp:TableHeaderCell>
             </asp:TableHeaderRow>
-            <asp:TableRow>
-                <asp:TableCell>Teboho</asp:TableCell>
-            </asp:TableRow>
+            
         </asp:Table>
 
         <p>

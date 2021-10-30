@@ -1,0 +1,49 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="Image_album.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>Album image</title>
+
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="Content/Site.css" rel="stylesheet" />
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+
+    <script src="Scripts/jquery-3.4.1.slim.min.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <nav class="navbar navbar-fixed-top">
+                <a class="navbar-brand" >
+                    <img src="images/kisspng-photo-albums-computer-icons-photography-5af98f18509774.8382604715263045363301.png" width="40" height="40"/>
+                </a>
+
+                <a class="navbar-brand">Image-Album</a>
+
+                <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbarSuportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggle-icon"></span>
+                </button>
+                
+            </nav>
+        </div>
+
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+
+            </asp:ContentPlaceHolder>
+        </div>
+
+        <footer>
+            <p>& copy All right reversed.</p>
+        </footer>
+
+    </form>
+</body>
+</html>
