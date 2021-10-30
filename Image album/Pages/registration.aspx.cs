@@ -23,21 +23,11 @@ namespace Image_album.Pages
             {
                 connection.Open();
 
-                SqlCommand command = new SqlCommand("+ [User](Name, Surname, Email, Password) VALUES ('" + nameTxt.Text + "', '" + surnameTxt.Text + "', '" + emailTxt.Text + "', '" + passwordTxt.Text + "')", connection);
+                SqlCommand command = new SqlCommand("INSERT INTO [User](Name, Surname, Email, Password) VALUES ('" + nameTxt.Text + "', '" + surnameTxt.Text + "', '" + emailTxt.Text + "', '" + passwordTxt.Text + "')", connection);
 
                 SqlDataAdapter adapter = new SqlDataAdapter();
                 adapter.InsertCommand = command;
                 adapter.InsertCommand.ExecuteNonQuery();
-
-                SqlDataReader readEmail = command.ExecuteReader();
-                if (readEmail.HasRows)
-                {
-                    conLabel.Text = "Email already exists in the database! Please log in.";
-                }
-                else
-                {
-                    conLabel.Text = "Email does not exist in the database! Please create account.";
-                }
 
                 connection.Close();
             }

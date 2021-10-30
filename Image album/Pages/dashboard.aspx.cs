@@ -17,7 +17,8 @@ namespace Image_album.Pages
         protected void btnLogout_Click(object sender, EventArgs e)
         {
             Session.Abandon();
-            Response.Redirect("login.aspx");
+        
+            Response.Redirect("WebForm1.aspx");
         }
     }
 }

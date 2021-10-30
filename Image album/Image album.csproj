@@ -153,11 +153,11 @@
     <Compile Include="Site1.Master.designer.cs">
       <DependentUpon>Site1.Master</DependentUpon>
     </Compile>
-    <Compile Include="WebForm1.aspx.cs">
+    <Compile Include="Pages\WebForm1.aspx.cs">
       <DependentUpon>WebForm1.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="WebForm1.aspx.designer.cs">
+    <Compile Include="Pages\WebForm1.aspx.designer.cs">
       <DependentUpon>WebForm1.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
@@ -168,17 +168,24 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Css\dashboard.css" />
     <Content Include="Css\main.css" />
+    <Content Include="Css\masterPage.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="images\ballast-point-sunrise-stage-right.jpg" />
     <Content Include="images\kisspng-photo-albums-computer-icons-photography-5af98f18509774.8382604715263045363301.png" />
+    <Content Include="images\pexels-asad-photo-maldives-3293148.jpg" />
+    <Content Include="images\pexels-dellon-thomas-2061083.jpg" />
+    <Content Include="images\pexels-philippe-donn-1133957.jpg" />
+    <Content Include="images\pexels-pixabay-45853.jpg" />
+    <Content Include="images\_121018455_gettyimages-577003673.jpg" />
     <Content Include="Pages\dashboard.aspx" />
     <Content Include="Pages\login.aspx" />
     <Content Include="Pages\registration.aspx" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
-    <Content Include="WebForm1.aspx" />
+    <Content Include="Pages\WebForm1.aspx" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
