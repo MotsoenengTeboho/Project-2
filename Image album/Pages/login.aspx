@@ -19,14 +19,14 @@
         <div class="">
             <p>
                 <asp:Label ID="Label2" runat="server" Text="Email:  " CssClass="parameters"></asp:Label>
-                <asp:RequiredFieldValidator ID="logEmailVal" runat="server" ErrorMessage="Email is required." ControlToValidate="logEmailTxt"></asp:RequiredFieldValidator>
+                <asp:RequiredFieldValidator ID="logEmailVal" runat="server" ErrorMessage="Email is required." ControlToValidate="logEmailTxt" CssClass="parameters"></asp:RequiredFieldValidator>
             </p>
             <p>
                 <asp:TextBox ID="logEmailTxt" runat="server" TextMode="Email"></asp:TextBox>
             </p>
             <p>
                 <asp:Label ID="Label3" runat="server" Text="Password:  " CssClass="parameters"></asp:Label>
-                <asp:RequiredFieldValidator ID="logPassVal" runat="server" ErrorMessage="Password is required." ControlToValidate="logPasswordTxt"></asp:RequiredFieldValidator>
+                <asp:RequiredFieldValidator ID="logPassVal" runat="server" ErrorMessage="Password is required." ControlToValidate="logPasswordTxt" CssClass="parameters"></asp:RequiredFieldValidator>
             </p>
             <p>
                 <asp:TextBox ID="logPasswordTxt" runat="server" TextMode="Password"></asp:TextBox>
@@ -37,12 +37,12 @@
         <p>
             <asp:Button ID="btnLogin" runat="server" Text="Login" CssClass="btn" OnClick="btnLogin_Click" />
         </p>
-        <asp:Label ID="Label4" runat="server" Text="Don't have an account?"></asp:Label>
+        <asp:Label ID="Label4" runat="server" Text="Don't have an account?" CssClass="parameters"></asp:Label>
 
-        <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Pages/registration.aspx">Register</asp:HyperLink>
+        <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Pages/registration.aspx" CssClass="parameters">Register</asp:HyperLink>
 
         <p>
-            <asp:Label ID="Label5" runat="server" Text=""></asp:Label>
+            <asp:Label ID="Label5" runat="server" Text="" CssClass="parameters"></asp:Label>
         </p>
 
     </form>

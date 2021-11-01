@@ -36,7 +36,7 @@ namespace Image_album.Pages
             {
                 con.Open();
                 //SELECT * FROM [Image] WHERE Email = '" + Session["email"] + "'
-                String query = "SELECT * FROM [User] WHERE Email = '" + Session["email"] + "'";
+                String query = "SELECT * FROM [Image] WHERE User_Email = '" + Session["email"] + "'";
                 SqlCommand command = new SqlCommand(query, con);
 
                 SqlDataAdapter adapter = new SqlDataAdapter();
@@ -54,6 +54,11 @@ namespace Image_album.Pages
             {
                 Label2.Text = "Error: " + ex.Message;
             }
+        }
+
+        protected void btnInsert_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("insertImage.aspx");
         }
     }
 }

@@ -17,7 +17,7 @@
             <asp:Label ID="lblWelcome" runat="server" Text="Label"></asp:Label>
         </p>
         
-        <asp:GridView ID="GridView1" CssClass="gridStyle" runat="server" CellPadding="4" ForeColor="#333333" GridLines="None" BorderColor="#56A5EB" BorderStyle="Solid" BorderWidth="1px" BorderRadius="5px">
+        <asp:GridView ID="GridView1" CssClass="gridStyle" runat="server" CellPadding="5" ForeColor="#333333" GridLines="Vertical" BorderColor="#56A5EB" BorderStyle="Solid" BorderWidth="1px" BorderRadius="5px" CellSpacing="5">
             <AlternatingRowStyle BackColor="White" />
             <EditRowStyle BackColor="#2461BF" />
             <FooterStyle BackColor="#507CD1" Font-Bold="True" ForeColor="White" />
@@ -32,7 +32,7 @@
         </asp:GridView>
 
         <p>
-            <asp:Button ID="btnInsert" runat="server" Text="Insert" CssClass="btn" />
+            <asp:Button ID="btnInsert" runat="server" Text="Insert" CssClass="btn" OnClick="btnInsert_Click" />
             <asp:Button ID="btnView" runat="server" Text="View" CssClass="btn" OnClick="btnView_Click" />
          </p>
 
