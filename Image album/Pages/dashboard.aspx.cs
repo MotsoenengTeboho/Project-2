@@ -15,11 +15,27 @@ namespace Image_album.Pages
         protected void Page_Load(object sender, EventArgs e)
         {
             lblWelcome.Text = "Welcome " + Session["email"];
+        }
 
+        
+        protected void btnLogout_Click(object sender, EventArgs e)
+        {
+            Session.Abandon();
+        
+            Response.Redirect("WebForm1.aspx");
+        }
+
+        protected void Unnamed1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void btnView_Click(object sender, EventArgs e)
+        {
             try
             {
                 con.Open();
-
+                //SELECT * FROM [Image] WHERE Email = '" + Session["email"] + "'
                 String query = "SELECT * FROM [User] WHERE Email = '" + Session["email"] + "'";
                 SqlCommand command = new SqlCommand(query, con);
 
@@ -34,23 +50,10 @@ namespace Image_album.Pages
 
                 con.Close();
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 Label2.Text = "Error: " + ex.Message;
             }
-        }
-
-        
-        protected void btnLogout_Click(object sender, EventArgs e)
-        {
-            Session.Abandon();
-        
-            Response.Redirect("WebForm1.aspx");
-        }
-
-        protected void Unnamed1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
         }
     }
 }
