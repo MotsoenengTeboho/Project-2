@@ -1,7 +1,14 @@
 ﻿:root {
     background-color: #ecf5ff;
     font-family: Arial, Helvetica, sans-serif;
-    color: #333;
+    
+}
+
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    
+    padding: 0;
 }
 
 form {
@@ -29,6 +36,8 @@ table {
     font-size: larger;
     box-shadow: 0 0.1rem 1.4rem 0 rgba(86, 185, 235, 0.5);
 }
+
+
 
 .btn {
     padding: 1rem 0;
@@ -60,3 +69,18 @@ table {
     color: #56a5eb;
 }
 
+.gridStyle{
+    text-align:center;
+}
+
+.dropDownStyle {
+    justify-content: flex-end;
+    text-align: center;
+    margin-bottom: 1rem;
+    width: 100px;
+    padding: 5px;
+    font-size: medium;
+    border: none;
+    box-shadow: 0 0.1rem 1.4rem 0 rgba(86, 185, 235, 0.5);
+    border-radius: 1.5rem;
+}

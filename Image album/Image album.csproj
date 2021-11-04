@@ -131,6 +131,20 @@
     <Compile Include="Pages\dashboard.aspx.designer.cs">
       <DependentUpon>dashboard.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Pages\deleteImage.aspx.cs">
+      <DependentUpon>deleteImage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\deleteImage.aspx.designer.cs">
+      <DependentUpon>deleteImage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\insertImage.aspx.cs">
+      <DependentUpon>insertImage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\insertImage.aspx.designer.cs">
+      <DependentUpon>insertImage.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Pages\login.aspx.cs">
       <DependentUpon>login.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -181,6 +195,8 @@
     <Content Include="images\pexels-pixabay-45853.jpg" />
     <Content Include="images\_121018455_gettyimages-577003673.jpg" />
     <Content Include="Pages\dashboard.aspx" />
+    <Content Include="Pages\deleteImage.aspx" />
+    <Content Include="Pages\insertImage.aspx" />
     <Content Include="Pages\login.aspx" />
     <Content Include="Pages\registration.aspx" />
     <Content Include="Scripts\bootstrap.js" />
