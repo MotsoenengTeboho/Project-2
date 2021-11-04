@@ -17,9 +17,44 @@
             <asp:Label ID="lblWelcome" runat="server" Text="Label"></asp:Label>
         </p>
         <p>
-            <asp:Label ID="Label3" runat="server" Text="Delete with title: "></asp:Label>
+            <asp:Label ID="Label3" runat="server" Text="Delete using an image ID: "></asp:Label>
+            <asp:DropDownList ID="DropDownList1" runat="server" CssClass="dropDownStyle" DataTextField="Id" DataValueField="Id">
+                <asp:ListItem>-- Select an ID</asp:ListItem>
+            </asp:DropDownList>
+            <asp:Button ID="btnDelete" runat="server" Text="Delete" CssClass="btn" OnClick="btnDelete_Click" />
         </p>
-        <asp:GridView ID="GridView1" runat="server"></asp:GridView>
+        <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="Id" CssClass="gridStyle" BackColor="White" BorderColor="#3366CC" BorderStyle="None" BorderWidth="1px" CellPadding="4">
+            <Columns>
+                <asp:BoundField DataField="Id" HeaderText="Id" InsertVisible="False" ReadOnly="True" SortExpression="Id" />
+                <asp:BoundField DataField="User_Email" HeaderText="User_Email" SortExpression="User_Email" />
+                <asp:BoundField DataField="Title" HeaderText="Title" SortExpression="Title" />
+                <asp:BoundField DataField="Description" HeaderText="Description" SortExpression="Description" />
+                <asp:BoundField DataField="Upload_Date" HeaderText="Upload_Date" SortExpression="Upload_Date" />
+                <asp:TemplateField HeaderText="Image">
+                    <EditItemTemplate>
+                        <asp:TextBox ID="TextBox1" runat="server" Text='<%# Eval("Photo") %>'></asp:TextBox>
+                    </EditItemTemplate>
+                    <ItemTemplate>
+                        <asp:Image ID="Image1" runat="server" Height="100px" ImageUrl='<%# Eval("Photo") %>' Width="150px" />
+                    </ItemTemplate>
+                </asp:TemplateField>
+                <asp:TemplateField HeaderText="Delete" ShowHeader="False">
+                    <ItemTemplate>
+                        <asp:LinkButton ID="LinkButton1" runat="server" CausesValidation="false" CommandName="" OnClick="LinkButton1_Click" Text="Delete"></asp:LinkButton>
+                    </ItemTemplate>
+                </asp:TemplateField>
+            </Columns>
+            <FooterStyle BackColor="#99CCCC" ForeColor="#003399" />
+            <HeaderStyle BackColor="#003399" Font-Bold="True" ForeColor="#CCCCFF" />
+            <PagerStyle BackColor="#99CCCC" ForeColor="#003399" HorizontalAlign="Left" />
+            <RowStyle BackColor="White" ForeColor="#003399" />
+            <SelectedRowStyle BackColor="#009999" Font-Bold="True" ForeColor="#CCFF99" />
+            <SortedAscendingCellStyle BackColor="#EDF6F6" />
+            <SortedAscendingHeaderStyle BackColor="#0D4AC4" />
+            <SortedDescendingCellStyle BackColor="#D6DFDF" />
+            <SortedDescendingHeaderStyle BackColor="#002876" />
+        </asp:GridView>
+        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:imageAlbumDbConnectionString %>" SelectCommand="SELECT * FROM [Image]"></asp:SqlDataSource>
         <p>
             <asp:Button ID="btnInsert" runat="server" Text="Insert" CssClass="btn" OnClick="btnInsert_Click" />
             <asp:Button ID="btnView" runat="server" Text="View" CssClass="btn" OnClick="btnView_Click" />
