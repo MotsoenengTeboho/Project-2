@@ -7,8 +7,6 @@
 * {
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
-    padding: 0;
     color: #333;
 }
 
@@ -37,6 +35,8 @@ table {
     font-size: larger;
     box-shadow: 0 0.1rem 1.4rem 0 rgba(86, 185, 235, 0.5);
 }
+
+
 
 .btn {
     padding: 1rem 0;
@@ -68,3 +68,6 @@ table {
     color: #56a5eb;
 }
 
+.gridStyle{
+    text-align:center;
+}

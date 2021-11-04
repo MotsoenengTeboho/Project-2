@@ -14,7 +14,7 @@ namespace Image_album.Pages
         SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Project 2\Image album\imageAlbumDb.mdf;Integrated Security=True");
         protected void Page_Load(object sender, EventArgs e)
         {
-            lblWelcome.Text = "Welcome " + Session["email"];
+            lblWelcome.Text = "Logged in as: " + Session["email"];
         }
 
         
