@@ -16,21 +16,10 @@
         <p>
             <asp:Label ID="lblWelcome" runat="server" Text="Label"></asp:Label>
         </p>
-        
-        <asp:GridView ID="GridView1" CssClass="gridStyle" runat="server" CellPadding="5" ForeColor="#333333" GridLines="Vertical" BorderColor="#56A5EB" BorderStyle="Solid" BorderWidth="1px" BorderRadius="5px" CellSpacing="5">
-            <AlternatingRowStyle BackColor="White" />
-            <EditRowStyle BackColor="#2461BF" />
-            <FooterStyle BackColor="#507CD1" Font-Bold="True" ForeColor="White" />
-            <HeaderStyle BackColor="#507CD1" Font-Bold="True" ForeColor="White" />
-            <PagerStyle BackColor="#2461BF" ForeColor="White" HorizontalAlign="Center" />
-            <RowStyle BackColor="#EFF3FB" />
-            <SelectedRowStyle BackColor="#D1DDF1" Font-Bold="True" ForeColor="#333333" />
-            <SortedAscendingCellStyle BackColor="#F5F7FB" />
-            <SortedAscendingHeaderStyle BackColor="#6D95E1" />
-            <SortedDescendingCellStyle BackColor="#E9EBEF" />
-            <SortedDescendingHeaderStyle BackColor="#4870BE" />
-        </asp:GridView>
-
+        <p>
+            <asp:Label ID="Label3" runat="server" Text="Delete with title: "></asp:Label>
+        </p>
+        <asp:GridView ID="GridView1" runat="server"></asp:GridView>
         <p>
             <asp:Button ID="btnInsert" runat="server" Text="Insert" CssClass="btn" OnClick="btnInsert_Click" />
             <asp:Button ID="btnView" runat="server" Text="View" CssClass="btn" OnClick="btnView_Click" />
@@ -38,6 +27,7 @@
 
         <p>
             <asp:Button ID="btnLogout" runat="server" Text="Logout" OnClick="btnLogout_Click" CssClass="btn" />
+            
         </p>
         <asp:Label ID="Label2" runat="server" Text=""></asp:Label>
     </form>

@@ -47,7 +47,7 @@ namespace Image_album.Pages
             {
                 connection.Open();
                 
-                SqlCommand command = new SqlCommand("INSERT INTO [Image](User_Email, Title, Description, Upload_Date, Photo) VALUES ('" + Session["email"] + "', '" + titleTxt.Text + "', '" + descriptionTxt.Text + "', '" + uploadDateTxt.Text + "', '"+ path.ToString() +"')", connection);
+                SqlCommand command = new SqlCommand("INSERT INTO [Image](User_Email, Title, Description, Upload_Date, Photo) VALUES ('" + Session["email"] + "', '" + titleTxt.Text + "', '" + descriptionTxt.Text + "', '" + uploadDateTxt.Text + "', '"+ FileUpload1.PostedFile +"')", connection);
 
                 SqlDataAdapter adapter = new SqlDataAdapter();
                 adapter.InsertCommand = command;

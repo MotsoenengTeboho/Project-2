@@ -60,5 +60,10 @@ namespace Image_album.Pages
         {
             Response.Redirect("insertImage.aspx");
         }
+
+        protected void GridView1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
