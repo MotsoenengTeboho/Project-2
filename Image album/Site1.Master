@@ -24,7 +24,7 @@
         <div>
             <nav class="navbar navbar-fixed-top">
                 <a class="navbar-brand" >
-                    <img src="images/kisspng-photo-albums-computer-icons-photography-5af98f18509774.8382604715263045363301.png" width="40" height="40" />
+                    <asp:Image ID="Image1" runat="server" ImageUrl="~/images/kisspng-photo-albums-computer-icons-photography-5af98f18509774.8382604715263045363301.png" width="40" height="40"/>
                 </a>
                 <a class="navbar-brand navTitle">Image-Album</a>
 

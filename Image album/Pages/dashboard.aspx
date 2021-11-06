@@ -15,6 +15,7 @@
         </div>
         <p>
             <asp:Label ID="lblWelcome" runat="server" Text="Label"></asp:Label>
+            
         </p>
         <p>
             <asp:Label ID="Label3" runat="server" Text="Delete using an image ID: "></asp:Label>
@@ -36,11 +37,6 @@
                     </EditItemTemplate>
                     <ItemTemplate>
                         <asp:Image ID="Image1" runat="server" Height="100px" ImageUrl='<%# Eval("Photo") %>' Width="150px" />
-                    </ItemTemplate>
-                </asp:TemplateField>
-                <asp:TemplateField HeaderText="Delete" ShowHeader="False">
-                    <ItemTemplate>
-                        <asp:LinkButton ID="LinkButton1" runat="server" CausesValidation="false" CommandName="" OnClick="LinkButton1_Click" Text="Delete"></asp:LinkButton>
                     </ItemTemplate>
                 </asp:TemplateField>
             </Columns>

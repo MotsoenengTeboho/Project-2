@@ -16,6 +16,7 @@ namespace Image_album.Pages
         SqlConnection connection = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Project 2\Image album\imageAlbumDb.mdf;Integrated Security=True");
         protected void Page_Load(object sender, EventArgs e)
         {
+            
             lblWelcome.Text = "Logged in as: " + Session["email"];
             ValidationSettings.UnobtrusiveValidationMode = UnobtrusiveValidationMode.None;
         }
@@ -25,10 +26,10 @@ namespace Image_album.Pages
             try
             {
                 FileUpload1.SaveAs(Server.MapPath("~/images/") + Path.GetFileName(FileUpload1.FileName));
-                String imageLink = "Pictures/" + Path.GetFileName(FileUpload1.FileName);
+                String imageLink = "~/images/" + Path.GetFileName(FileUpload1.FileName);
                 connection.Open();
-                
-                SqlCommand command = new SqlCommand("INSERT INTO [Image](User_Email, Title, Description, Upload_Date, Photo) VALUES ('" + Session["email"] + "', '" + titleTxt.Text + "', '" + descriptionTxt.Text + "', '" + uploadDateTxt.Text + "', '"+ imageLink +"')", connection);
+
+                SqlCommand command = new SqlCommand("INSERT INTO [Image](User_Email, Title, Description, Upload_Date, Photo) VALUES ('" + Session["email"] + "', '" + titleTxt.Text + "', '" + descriptionTxt.Text + "', '" + uploadDateTxt.Text + "', '" + imageLink + "')", connection);
                 command.ExecuteNonQuery();
 
                 connection.Close();
