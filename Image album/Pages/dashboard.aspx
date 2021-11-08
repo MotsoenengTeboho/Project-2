@@ -24,14 +24,16 @@
                     <asp:ListItem>Select an ID</asp:ListItem>
                 </asp:DropDownList>
                 <asp:Button ID="btnDelete" runat="server" Text="Delete" CssClass="btn" OnClick="btnDelete_Click" />
+                
             </p>
         </div>
         <p>
             <asp:Label ID="Label4" runat="server" Text="Search image by using title"></asp:Label>
             <asp:TextBox ID="searchTxt" runat="server" CssClass="dropDownStyle"></asp:TextBox>
             <asp:Button ID="btnSearch" runat="server" Text="Search" CssClass="btn" OnClick="btnSearch_Click" />
+            
         </p>
-        <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="Id" CssClass="gridStyle" BackColor="White" BorderColor="#3366CC" BorderStyle="None" BorderWidth="1px" CellPadding="4">
+        <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="Id" CssClass="gridStyle" BackColor="White" BorderColor="#3366CC" BorderStyle="None" BorderWidth="3px" CellPadding="4" CellSpacing="4">
             <Columns>
                 <asp:BoundField DataField="Id" HeaderText="Id" InsertVisible="False" ReadOnly="True" SortExpression="Id" />
                 <asp:BoundField DataField="User_Email" HeaderText="User_Email" SortExpression="User_Email" />
@@ -64,8 +66,8 @@
          </p>
 
         <p>
+            <asp:Button ID="btnDown" runat="server" Text="Download" CssClass="btn" OnClick="btnDown_Click" />
             <asp:Button ID="btnLogout" runat="server" Text="Logout" OnClick="btnLogout_Click" CssClass="btn" />
-            
         </p>
         <asp:Label ID="Label2" runat="server" Text=""></asp:Label>
     </form>

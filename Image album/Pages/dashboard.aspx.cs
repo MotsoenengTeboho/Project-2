@@ -159,5 +159,10 @@ namespace Image_album.Pages
             refresh();
             searchTxt.Text = "";
         }
+
+        protected void btnDown_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("shareImages.aspx");
+        }
     }
 }
