@@ -123,11 +123,41 @@ namespace Image_album.Pages
 
             refresh();
             refreshGrid();
+
+            searchTxt.Text = "";
         }
 
         protected void LinkButton1_Click(object sender, EventArgs e)
         {
             Response.Redirect("deleteImage.aspx");
+        }
+
+        protected void btnSearch_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                con.Open();
+                String query = "SELECT * FROM [Image] WHERE Title = '" + searchTxt.Text + "' AND User_Email = '" + Session["email"] + "'";
+                SqlCommand command = new SqlCommand(query, con);
+
+                SqlDataAdapter adapter = new SqlDataAdapter();
+                adapter.SelectCommand = command;
+
+                DataSet ds = new DataSet();
+                adapter.Fill(ds, "User");
+
+                GridView1.DataSource = ds;
+                GridView1.DataBind();
+                
+                con.Close();
+            }
+            catch (Exception ex)
+            {
+                Label2.Text = "Error: " + ex.Message;
+            }
+
+            refresh();
+            searchTxt.Text = "";
         }
     }
 }

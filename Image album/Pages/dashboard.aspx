@@ -17,12 +17,19 @@
             <asp:Label ID="lblWelcome" runat="server" Text="Label"></asp:Label>
             
         </p>
+        <div>
+            <p>
+                <asp:Label ID="Label3" runat="server" Text="Delete using an image ID: "></asp:Label>
+                <asp:DropDownList ID="DropDownList1" runat="server" CssClass="dropDownStyle" DataTextField="Id" DataValueField="Id">
+                    <asp:ListItem>Select an ID</asp:ListItem>
+                </asp:DropDownList>
+                <asp:Button ID="btnDelete" runat="server" Text="Delete" CssClass="btn" OnClick="btnDelete_Click" />
+            </p>
+        </div>
         <p>
-            <asp:Label ID="Label3" runat="server" Text="Delete using an image ID: "></asp:Label>
-            <asp:DropDownList ID="DropDownList1" runat="server" CssClass="dropDownStyle" DataTextField="Id" DataValueField="Id">
-                <asp:ListItem>-- Select an ID</asp:ListItem>
-            </asp:DropDownList>
-            <asp:Button ID="btnDelete" runat="server" Text="Delete" CssClass="btn" OnClick="btnDelete_Click" />
+            <asp:Label ID="Label4" runat="server" Text="Search image by using title"></asp:Label>
+            <asp:TextBox ID="searchTxt" runat="server" CssClass="dropDownStyle"></asp:TextBox>
+            <asp:Button ID="btnSearch" runat="server" Text="Search" CssClass="btn" OnClick="btnSearch_Click" />
         </p>
         <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="Id" CssClass="gridStyle" BackColor="White" BorderColor="#3366CC" BorderStyle="None" BorderWidth="1px" CellPadding="4">
             <Columns>

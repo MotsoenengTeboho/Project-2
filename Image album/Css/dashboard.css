@@ -23,8 +23,8 @@ input {
     text-align: center;
     margin-bottom: 1rem;
     width: 25rem;
-    padding: 1.5rem;
-    font-size: 1.8rem;
+    height: 45px;
+    font-size: medium;
     border: none;
     box-shadow: 0 0.1rem 1.4rem 0 rgba(86, 185, 235, 0.5);
     border-radius: 1.5rem;
@@ -77,10 +77,16 @@ table {
     justify-content: flex-end;
     text-align: center;
     margin-bottom: 1rem;
-    width: 100px;
+    width: 150px;
     padding: 5px;
     font-size: medium;
     border: none;
     box-shadow: 0 0.1rem 1.4rem 0 rgba(86, 185, 235, 0.5);
     border-radius: 1.5rem;
+}
+
+.searchTxtStyle {
+    width: 170px;
+    height: 50px;
+    font-size: medium;
 }
