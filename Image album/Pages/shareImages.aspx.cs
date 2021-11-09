@@ -14,6 +14,39 @@ namespace Image_album.Pages
         SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Project 2\Image album\imageAlbumDb.mdf;Integrated Security=True");
         protected void Page_Load(object sender, EventArgs e)
         {
+        }
+
+        protected void btnDownload_Click(object sender, EventArgs e)
+        {
+        }
+
+        public void fillGrid()
+        {
+            try
+            {
+                con.Open();
+                String query = "SELECT Photo FROM [Image] WHERE Id = '" + DropDownList1.SelectedValue + "' AND User_Email = '" + Session["email"] + "'";
+                SqlCommand command = new SqlCommand(query, con);
+
+                SqlDataAdapter adapter = new SqlDataAdapter();
+                adapter.SelectCommand = command;
+
+                DataSet ds = new DataSet();
+                adapter.Fill(ds, "User");
+
+                GridView1.DataSource = ds;
+                GridView1.DataBind();
+
+                con.Close();
+            }
+            catch (Exception ex)
+            {
+                Label3.Text = "Error: " + ex.Message;
+            }
+        }
+
+        protected void btnFillID_Click(object sender, EventArgs e)
+        {
             try
             {
                 con.Open();
@@ -38,33 +71,13 @@ namespace Image_album.Pages
             }
         }
 
-        protected void btnDownload_Click(object sender, EventArgs e)
+        protected void btnViewImage_Click(object sender, EventArgs e)
         {
-        }
-
-        protected void DropDownList1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            try
+            if(DropDownList1.SelectedValue == null)
             {
-                con.Open();
-                String query = "SELECT Photo FROM [Image] WHERE Id = '" + DropDownList1.SelectedValue + "' AND User_Email = '" + Session["email"] + "'";
-                SqlCommand command = new SqlCommand(query, con);
-
-                SqlDataAdapter adapter = new SqlDataAdapter();
-                adapter.SelectCommand = command;
-
-                DataSet ds = new DataSet();
-                adapter.Fill(ds, "User");
-
-                GridView1.DataSource = ds;
-                GridView1.DataBind();
-
-                con.Close();
+                Label3.Text = "Nothing to view. Please select image ID above!";
             }
-            catch (Exception ex)
-            {
-                Label3.Text = "Error: " + ex.Message;
-            }
+            fillGrid();
         }
     }
 }

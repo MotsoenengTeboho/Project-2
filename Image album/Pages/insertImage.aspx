@@ -4,14 +4,14 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title>Image album</title>
+    <title>Upload</title>
 
     <link href="../Css/insertImage.css" rel="stylesheet" />
 </head>
 <body>
     <form id="form1" runat="server">
         <div>
-            <asp:Label ID="Label5" runat="server" Text="Upload image" CssClass="label"></asp:Label>
+            <asp:Label ID="Label5" runat="server" Text="Upload image" CssClass="lblHeader"></asp:Label>
         </div>
         <div>
             <p>
@@ -42,7 +42,7 @@
                 <asp:Label ID="Label4" runat="server" Text="Image: " CssClass="parameters"></asp:Label>
             </p>
             <p>
-                <asp:FileUpload ID="FileUpload1" runat="server" accept="image/*" />
+                <asp:FileUpload ID="FileUpload1" runat="server" />
             </p>
         </div>
         

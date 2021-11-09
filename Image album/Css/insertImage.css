@@ -1,5 +1,4 @@
-﻿:root{
-
+﻿:root {
     background-color: #ecf5ff;
     font-size: 62.5%;
 }
@@ -40,13 +39,15 @@ img {
 input {
     text-align: center;
     margin-bottom: 1rem;
-    width: 28rem;
+    width: 280px;
     padding: 1.5rem;
     font-size: 1.8rem;
     border: none;
     box-shadow: 0 0.1rem 1.4rem 0 rgba(86, 185, 235, 0.5);
     border-radius: 1.5rem;
 }
+
+
 
 .container {
     width: 100vw;
@@ -75,13 +76,13 @@ input {
     background-color: white;
 }
 
-.btn:hover {
-    cursor: pointer;
-    box-shadow: 0 0.4rem 1.4rem 0 rgba(86, 185, 235, 0.5);
-    transform: translateY(-0.1rem);
-    transition: transform 150ms;
-    border-radius: 1.5rem;
-}
+    .btn:hover {
+        cursor: pointer;
+        box-shadow: 0 0.4rem 1.4rem 0 rgba(86, 185, 235, 0.5);
+        transform: translateY(-0.1rem);
+        transition: transform 150ms;
+        border-radius: 1.5rem;
+    }
 
 .label {
     font-size: 5.4rem;
@@ -96,19 +97,19 @@ input {
     list-style: none;
 }
 
-.nav_links li {
-    display: inline-block;
-    padding: 0px 20px;
-}
+    .nav_links li {
+        display: inline-block;
+        padding: 0px 20px;
+    }
 
-.nav_links li a {
-    color: #56a5eb;
-    transition: all 0.3s ease 0s;
-}
+        .nav_links li a {
+            color: #56a5eb;
+            transition: all 0.3s ease 0s;
+        }
 
-.nav_links li a:hover {
-    color: #56a5eb;
-}
+            .nav_links li a:hover {
+                color: #56a5eb;
+            }
 
 .div_header {
     background-color: #333;
@@ -121,4 +122,9 @@ input {
 
 .titleMgn {
     margin-right: 90px;
+}
+
+.lblHeader {
+    font-size: 2rem;
+    color: #56a5eb;
 }

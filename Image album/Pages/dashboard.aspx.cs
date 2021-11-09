@@ -34,6 +34,7 @@ namespace Image_album.Pages
         {
             refresh();
             refreshGrid();
+            Label2.Visible = false;
         }
 
         protected void btnInsert_Click(object sender, EventArgs e)
@@ -108,7 +109,7 @@ namespace Image_album.Pages
 
                     con.Close();
 
-                    Label3.Text = "Delete seccessful.";
+                    Label2.Text = "Delete seccessful.";
                 }
 
                 catch (Exception ex)
@@ -158,6 +159,7 @@ namespace Image_album.Pages
 
             refresh();
             searchTxt.Text = "";
+            Label2.Visible = false;
         }
 
         protected void btnDown_Click(object sender, EventArgs e)

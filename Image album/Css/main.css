@@ -123,3 +123,15 @@ input {
 .titleMgn {
     margin-right: 90px;
 }
+
+.dropDownStyle {
+    justify-content: flex-end;
+    text-align: center;
+    margin-bottom: 1rem;
+    width: 150px;
+    padding: 5px;
+    font-size: medium;
+    border: none;
+    box-shadow: 0 0.1rem 1.4rem 0 rgba(86, 185, 235, 0.5);
+    border-radius: 1.5rem;
+}
