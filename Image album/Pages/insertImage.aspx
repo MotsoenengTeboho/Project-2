@@ -11,7 +11,7 @@
 <body>
     <form id="form1" runat="server">
         <div>
-            <asp:Label ID="Label5" runat="server" Text="Upload image" CssClass="lblHeader"></asp:Label>
+            <asp:Label ID="Label5" runat="server" Text="Upload image" CssClass="lblHeader" ></asp:Label>
         </div>
         <div>
             <p>

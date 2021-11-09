@@ -29,7 +29,7 @@
         </div>
         <p>
             <asp:Label ID="Label4" runat="server" Text="Search image by using title"></asp:Label>
-            <asp:TextBox ID="searchTxt" runat="server" CssClass="dropDownStyle"></asp:TextBox>
+            <asp:TextBox ID="searchTxt" runat="server" CssClass="dropDownStyle" TextMode="Search"></asp:TextBox>
             <asp:Button ID="btnSearch" runat="server" Text="Search" CssClass="btn" OnClick="btnSearch_Click" />
             
         </p>

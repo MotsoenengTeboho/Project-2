@@ -23,6 +23,7 @@ namespace Image_album.Pages
 
         protected void btnSubmit_Click(object sender, EventArgs e)
         {
+            
             HttpPostedFile file = FileUpload1.PostedFile;
             FileUpload1.SaveAs(Server.MapPath("~/images/") + Path.GetFileName(FileUpload1.FileName));
             String imageLink = "~/images/" + Path.GetFileName(FileUpload1.FileName);
