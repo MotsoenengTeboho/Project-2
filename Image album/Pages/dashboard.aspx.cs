@@ -6,6 +6,8 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Data.SqlClient;
 using System.Data;
+using System.IO;
+using System.Configuration;
 
 namespace Image_album.Pages
 {
@@ -166,5 +168,8 @@ namespace Image_album.Pages
         {
             Response.Redirect("shareImages.aspx");
         }
+
+        protected void LinkButton1_Click1(object sender, EventArgs e)
+        {}
     }
 }

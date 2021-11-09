@@ -48,6 +48,11 @@
                         <asp:Image ID="Image1" runat="server" Height="100px" ImageUrl='<%# Eval("Photo") %>' Width="150px" />
                     </ItemTemplate>
                 </asp:TemplateField>
+                <asp:TemplateField ShowHeader="False">
+                    <ItemTemplate>
+                        <asp:LinkButton ID="LinkButton1" runat="server" CausesValidation="false" CommandName="" OnClick="LinkButton1_Click1" Text="Download"></asp:LinkButton>
+                    </ItemTemplate>
+                </asp:TemplateField>
             </Columns>
             <FooterStyle BackColor="#99CCCC" ForeColor="#003399" />
             <HeaderStyle BackColor="#003399" Font-Bold="True" ForeColor="#CCCCFF" />
