@@ -1,0 +1,139 @@
+﻿body {
+}
+:root {
+    background-color: #ecf5ff;
+    font-size: 62.5%;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+li, a {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 30px 10%;
+    height: 45px;
+}
+
+form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+img {
+    margin-top: 20px;
+}
+
+input {
+    text-align: center;
+    margin-bottom: 1rem;
+    width: 270px;
+    padding: 1.5rem;
+    font-size: 1.8rem;
+    border: none;
+    box-shadow: 0 0.1rem 1.4rem 0 rgba(86, 185, 235, 0.5);
+    border-radius: 1.5rem;
+}
+
+
+
+.container {
+    width: 100vw;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 80rem;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.paramDiv {
+    margin-top: 200px;
+}
+
+.btn {
+    font-size: 1.8rem;
+    padding: 1rem 0;
+    width: 17rem;
+    text-align: center;
+    border: 0.1rem solid #56a5eb;
+    margin-bottom: 1rem;
+    text-decoration: none;
+    color: #56a5eb;
+    background-color: white;
+}
+
+    .btn:hover {
+        cursor: pointer;
+        box-shadow: 0 0.4rem 1.4rem 0 rgba(86, 185, 235, 0.5);
+        transform: translateY(-0.1rem);
+        transition: transform 150ms;
+        border-radius: 1.5rem;
+    }
+
+.label {
+    font-size: 3.5rem;
+    color: #56a5eb;
+}
+
+.parameters {
+    font-size: 17px;
+}
+
+.nav_links {
+    list-style: none;
+}
+
+    .nav_links li {
+        display: inline-block;
+        padding: 0px 20px;
+    }
+
+        .nav_links li a {
+            color: #56a5eb;
+            transition: all 0.3s ease 0s;
+        }
+
+            .nav_links li a:hover {
+                color: #56a5eb;
+            }
+
+.div_header {
+    background-color: #333;
+    height: 55px;
+}
+
+.moveTitle {
+    margin-right: 210px;
+}
+
+.titleMgn {
+    margin-right: 90px;
+}
+
+.dropDownStyle {
+    justify-content: flex-end;
+    text-align: center;
+    margin-bottom: 1rem;
+    width: 150px;
+    padding: 5px;
+    font-size: medium;
+    border: none;
+    box-shadow: 0 0.1rem 1.4rem 0 rgba(86, 185, 235, 0.5);
+    border-radius: 1.5rem;
+}

@@ -71,7 +71,7 @@
          </p>
 
         <p>
-            <asp:Button ID="btnDown" runat="server" Text="Download" CssClass="btn" OnClick="btnDown_Click" />
+            <asp:Button ID="btnDown" runat="server" Text="Albums" CssClass="btn" OnClick="btnDown_Click" />
             <asp:Button ID="btnLogout" runat="server" Text="Logout" OnClick="btnLogout_Click" CssClass="btn" />
         </p>
         <asp:Label ID="Label2" runat="server" Text=""></asp:Label>

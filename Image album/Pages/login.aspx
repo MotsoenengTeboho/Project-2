@@ -9,14 +9,11 @@
     <link href="../Css/main.css" rel="stylesheet" />
 </head>
 <body>
-    <form id="form1" runat="server">
+    <form id="form1" runat="server" >
         <div>
-            
+            <asp:Label ID="Label1" runat="server" Text="Login" CssClass="label"></asp:Label>
         </div>
-        <div class="">
-            <asp:Label ID="Label1" runat="server" Text="Login" CssClass="label"></asp:Label>        
-        </div>
-        <div class="">
+        <div>
             <p>
                 <asp:Label ID="Label2" runat="server" Text="Email:  " CssClass="parameters"></asp:Label>
                 <asp:RequiredFieldValidator ID="logEmailVal" runat="server" ErrorMessage="Email is required." ControlToValidate="logEmailTxt" CssClass="parameters"></asp:RequiredFieldValidator>

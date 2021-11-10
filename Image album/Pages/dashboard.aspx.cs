@@ -170,7 +170,6 @@ namespace Image_album.Pages
         }
 
         protected void LinkButton1_Click1(object sender, EventArgs e)
-        {
-        }
+        {}
     }
 }

@@ -124,6 +124,13 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Pages\createAlbum.aspx.cs">
+      <DependentUpon>createAlbum.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\createAlbum.aspx.designer.cs">
+      <DependentUpon>createAlbum.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Pages\dashboard.aspx.cs">
       <DependentUpon>dashboard.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -191,6 +198,7 @@
     <Content Include="Css\insertImage.css" />
     <Content Include="Css\main.css" />
     <Content Include="Css\masterPage.css" />
+    <Content Include="Css\shareImage.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -202,6 +210,7 @@
     <Content Include="images\pexels-philippe-donn-1133957.jpg" />
     <Content Include="images\pexels-pixabay-45853.jpg" />
     <Content Include="images\_121018455_gettyimages-577003673.jpg" />
+    <Content Include="Pages\createAlbum.aspx" />
     <Content Include="Pages\dashboard.aspx" />
     <Content Include="Pages\deleteImage.aspx" />
     <Content Include="Pages\insertImage.aspx" />
@@ -239,6 +248,7 @@
     <Content Include="Site1.Master" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="albumImages\" />
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
   </ItemGroup>
