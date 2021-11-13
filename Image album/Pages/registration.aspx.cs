@@ -29,7 +29,18 @@ namespace Image_album.Pages
                 adapter.InsertCommand = command;
                 adapter.InsertCommand.ExecuteNonQuery();
 
+                SqlDataReader reader = command.ExecuteReader();
+                if(reader.HasRows)
+                {
+                    conLabel.Text = "Sorry thee email already exists! Please Log in.";
+                }
+                else
+                {
+                    conLabel.Text = "Account registered successfully.";
+                }
+
                 connection.Close();
+                
             }
             catch (Exception error)
             {
