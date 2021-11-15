@@ -51,7 +51,7 @@
         <asp:Label ID="Label6" runat="server" Text="Already have an account?" CssClass="parameters"></asp:Label>
         
         <asp:HyperLink ID="HyperLink1" runat="server" CssClass="parameters" NavigateUrl="~/Pages/login.aspx">Login</asp:HyperLink>
-        <asp:HyperLink ID="HyperLink2" runat="server" CssClass="parameters" NavigateUrl="~/Pages/WebForm1.aspx">Home</asp:HyperLink>
+        <asp:HyperLink ID="HyperLink2" runat="server" CssClass="parameters" NavigateUrl="~/WebForm1.aspx">Home</asp:HyperLink>
         
         <p>
             <asp:Label ID="conLabel" runat="server" Text="" CssClass="parameters"></asp:Label>

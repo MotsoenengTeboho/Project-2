@@ -33,8 +33,8 @@
                     <span class="navbar-toggle-icon"></span>
                 </button>
 
-                <a class="navbar-brand navTitle" style="float:right" href="login.aspx">Login</a>
-                <a class="navbar-brand navTitle" style="float:right" href="registration.aspx">Register</a>
+                <a class="navbar-brand navTitle" style="float:right" href="Pages/login.aspx" >Login</a>
+                <a class="navbar-brand navTitle" style="float:right" href="Pages/registration.aspx" >Register</a>
                 
                 
             </nav>
