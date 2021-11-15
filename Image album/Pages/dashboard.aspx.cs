@@ -13,7 +13,7 @@ namespace Image_album.Pages
 {
     public partial class dashboard : System.Web.UI.Page
     {
-        SqlConnection con = new SqlConnection(@"workstation id=imageAlbumDb.mssql.somee.com;packet size=4096;user id=motsoenengT_SQLLogin_2;pwd=sa1ba5cmjn;data source=imageAlbumDb.mssql.somee.com;persist security info=False;initial catalog=imageAlbumDb");
+        SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Asus Pc\Documents\imageDb.mdf;Integrated Security=True");
         protected void Page_Load(object sender, EventArgs e)
         {
             lblWelcome.Text = "Logged in as: " + Session["email"];
@@ -23,8 +23,8 @@ namespace Image_album.Pages
         protected void btnLogout_Click(object sender, EventArgs e)
         {
             Session.Abandon();
-        
-            Response.Redirect("WebForm1.aspx");
+
+            Response.Redirect("~/WebForm1.aspx");
         }
 
         protected void Unnamed1_SelectedIndexChanged(object sender, EventArgs e)
