@@ -159,6 +159,13 @@
     <Compile Include="Pages\login.aspx.designer.cs">
       <DependentUpon>login.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Pages\receivedImage.aspx.cs">
+      <DependentUpon>receivedImage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\receivedImage.aspx.designer.cs">
+      <DependentUpon>receivedImage.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Pages\registration.aspx.cs">
       <DependentUpon>registration.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -215,6 +222,7 @@
     <Content Include="Pages\deleteImage.aspx" />
     <Content Include="Pages\insertImage.aspx" />
     <Content Include="Pages\login.aspx" />
+    <Content Include="Pages\receivedImage.aspx" />
     <Content Include="Pages\registration.aspx" />
     <Content Include="Pages\shareImages.aspx" />
     <Content Include="Scripts\bootstrap.js" />

@@ -74,6 +74,9 @@
             <asp:Button ID="btnDown" runat="server" Text="Albums" CssClass="btn" OnClick="btnDown_Click" />
             <asp:Button ID="btnLogout" runat="server" Text="Logout" OnClick="btnLogout_Click" CssClass="btn" />
         </p>
+        <p>
+            <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Pages/receivedImage.aspx">Click here to share images.</asp:HyperLink>
+        </p>
         <asp:Label ID="Label2" runat="server" Text=""></asp:Label>
     </form>
 </body>

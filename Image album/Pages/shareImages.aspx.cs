@@ -11,7 +11,7 @@ namespace Image_album.Pages
 {
     public partial class shareImages : System.Web.UI.Page
     {
-        SqlConnection con = new SqlConnection(@"workstation id=imageAlbumDb.mssql.somee.com;packet size=4096;user id=motsoenengT_SQLLogin_2;pwd=sa1ba5cmjn;data source=imageAlbumDb.mssql.somee.com;persist security info=False;initial catalog=imageAlbumDb");
+        SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Project 2\Image album\imageDb.mdf;Integrated Security=True");
         protected void Page_Load(object sender, EventArgs e)
         {
             
@@ -130,7 +130,7 @@ namespace Image_album.Pages
             try 
             {
                 con.Open();
-                string selectQuery = "SELECT * FROM [Album] WHERE Album_Name = '" + DropDownList1.SelectedItem + "'";
+                string selectQuery = "SELECT * FROM [Album] WHERE Album_Name = '" + DropDownList1.SelectedItem + "' AND User_Email = '"+ Session["email"] +"'";
                 SqlCommand command = new SqlCommand(selectQuery, con);
 
                 SqlDataAdapter adapter = new SqlDataAdapter();
