@@ -12,7 +12,7 @@ namespace Image_album.Pages
 {
     public partial class receivedImage : System.Web.UI.Page
     {
-        SqlConnection connection = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Project 2\Image album\imageDb.mdf;Integrated Security=True");
+        SqlConnection connection = new SqlConnection(@"workstation id=imageAlbumDb.mssql.somee.com;packet size=4096;user id=motsoenengT_SQLLogin_3;pwd=etx2iu8p79;data source=imageAlbumDb.mssql.somee.com;persist security info=False;initial catalog=imageAlbumDb");
         protected void Page_Load(object sender, EventArgs e)
         {
             welcomeLabel.Text = "Logged in as: " + Session["email"];
@@ -69,6 +69,12 @@ namespace Image_album.Pages
                     lblOutput.Text = "Error: " + error.Message;
                 }
             }
+            else
+            {
+                lblOutput.Text = "Only files with (.png, .jpeg, .bmp, .ico, .jpg, .gif, .tiff) are allowed";
+            }
+
+            usersEmailTxt.Text = "";
         }
     }
 }
