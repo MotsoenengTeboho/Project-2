@@ -22,8 +22,8 @@ namespace Image_album.Pages
         protected void btnCreate_Click(object sender, EventArgs e)
         {
             HttpPostedFile file = FileUpload1.PostedFile;
-            FileUpload1.SaveAs(Server.MapPath("~/albumImages/") + Path.GetFileName(FileUpload1.FileName));
-            String imageLink = "~/albumImages/" + Path.GetFileName(FileUpload1.FileName);
+            FileUpload1.SaveAs(Server.MapPath("~/images/") + Path.GetFileName(FileUpload1.FileName));
+            String imageLink = "~/images/" + Path.GetFileName(FileUpload1.FileName);
             string extension = Path.GetExtension(file.FileName);
 
             if (extension.ToLower() == ".bmp" || extension.ToLower() == ".ico" || extension.ToLower() == ".png" ||
